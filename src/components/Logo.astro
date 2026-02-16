@@ -1,0 +1,41 @@
+---
+// src/components/Logo.astro
+---
+<div class="logo-3d-wrapper">
+  <img src="/logo.png?v=1" alt="Remonty Szczecin Logo" class="logo-img" />
+</div>
+
+<style>
+  .logo-3d-wrapper {
+    position: relative;
+    display: inline-block;
+    /* Perspektywa dla efektu 3D */
+    perspective: 1000px;
+  }
+
+  .logo-img {
+    display: block;
+    width: 200px; 
+    height: auto;
+    /* Animacja obrotu lewo-prawo */
+    animation: rotate360 10s linear infinite;
+    transform-style: preserve-3d;
+    
+    /* Na wszelki wypadek usuwamy wszelkie tła z poziomu CSS */
+    background: transparent !important;
+  }
+
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+  /* Zatrzymanie obrotu po najechaniu myszką */
+  .logo-3d-wrapper:hover .logo-img {
+    animation-play-state: paused;
+  }
+</style>

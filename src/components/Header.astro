@@ -1,0 +1,23 @@
+---
+const navItems = [
+    { linkText: 'Start', href: '/' },
+    { linkText: 'Usługi', href: '/uslugi' },
+    { linkText: 'Kontakt', href: '/kontakt' },
+    { linkText: 'Aplikacja Android', href: '/aplikacja-android' }
+];
+---
+
+<nav class="flex flex-wrap items-center justify-between gap-4 pt-6 pb-12 sm:pt-12 sm:pb-16">
+    <a href="/" class="no-underline">
+        <p class="text-xl font-bold tracking-tight sm:text-2xl">Złota Rączka Szczecin</p>
+    </a>
+    <ul class="flex flex-wrap gap-x-4 gap-y-1">
+        {navItems.map((item) => (
+            <li>
+                <a href={item.href} class="inline-block px-1.5 py-1 sm:px-3 sm:py-2">
+                    {item.linkText}
+                </a>
+            </li>
+        ))}
+    </ul>
+</nav>

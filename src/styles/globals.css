@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #111827 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  transition: all 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+}
+
+/* Neon accents */
+.neon-text {
+  background: linear-gradient(90deg, #00f5ff, #00ffa3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.neon-border {
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glow pulse */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #00f5ff; }
+  50% { box-shadow: 0 0 20px #00f5ff; }
+  100% { box-shadow: 0 0 5px #00f5ff; }
+}
+
+.glow {
+  animation: glow 2s infinite;
+}
+
+/* Section spacing */
+.section {
+  padding: 5rem 1.5rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
