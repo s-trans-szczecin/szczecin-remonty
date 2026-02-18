@@ -3,22 +3,51 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Aplikacja mobilna Android | Złota Rączka Szczecin">
-    <h1>Aplikacja mobilna na Androida</h1>
-    <p class="pt-4 max-w-3xl">
-        Przygotowujemy aplikację mobilną dla klientów, aby łatwiej zgłaszać zlecenia, wysyłać zdjęcia i umawiać terminy.
+
+  <section class="glass p-8 max-w-4xl mx-auto mt-10">
+
+    <h1 class="premium-heading text-3xl md:text-4xl mb-6">
+      Aplikacja mobilna na Androida
+    </h1>
+
+    <p class="strong-text text-lg max-w-3xl">
+      Przygotowujemy aplikację mobilną dla klientów, aby łatwiej zgłaszać zlecenia,
+      wysyłać zdjęcia oraz szybko umawiać terminy wizyt.
     </p>
 
-    <section class="pt-8 space-y-4">
-        <p class="text-lg font-semibold">Pobieranie aplikacji:</p>
-        <p class="opacity-90">Aplikacja będzie dostępna wkrótce. Link do pobrania zostanie dodany na tej stronie.</p>
-        <button type="button" disabled class="btn btn-lg">Wkrótce dostępne w Google Play</button>
-    </section>
+    <div class="pt-10 space-y-4">
 
-    <section class="pt-10">
-        <p>
-            Chcesz otrzymać powiadomienie o premierze? Zadzwoń pod
-            <a href="tel:+48725144019">+48 725 144 019</a> lub napisz na
-            <a href="mailto:buduje.remontuje.szczecin@gmail.com">buduje.remontuje.szczecin@gmail.com</a>.
-        </p>
-    </section>
+      <p class="strong-text-bold text-xl">
+        Pobieranie aplikacji:
+      </p>
+
+      <p class="strong-text opacity-95">
+        Aplikacja będzie dostępna wkrótce. Link do pobrania zostanie dodany na tej stronie.
+      </p>
+
+      <button 
+        type="button" 
+        disabled 
+        class="mt-4 px-6 py-3 rounded-xl bg-white/10 border border-white/20 text-white font-semibold opacity-70 cursor-not-allowed">
+        Wkrótce dostępne w Google Play
+      </button>
+
+    </div>
+
+    <div class="pt-12">
+      <p class="strong-text">
+        Chcesz otrzymać powiadomienie o premierze?
+        Zadzwoń pod
+        <a href="tel:+48725144019" class="font-bold text-white underline underline-offset-4">
+          +48 725 144 019
+        </a>
+        lub napisz na
+        <a href="mailto:buduje.remontuje.szczecin@gmail.com" class="font-bold text-white underline underline-offset-4">
+          buduje.remontuje.szczecin@gmail.com
+        </a>.
+      </p>
+    </div>
+
+  </section>
+
 </Layout>

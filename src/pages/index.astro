@@ -7,22 +7,20 @@ import Layout from "../layouts/Layout.astro";
   <!-- HERO VIDEO -->
   <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
 
-    <!-- Tło wideo -->
     <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
       <source src="/video.mp4" type="video/mp4" />
     </video>
 
-    <!-- Przyciemnienie -->
-    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+    <div class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
 
-    <!-- Treść -->
     <div class="relative z-10 max-w-4xl px-6">
-      <h1 class="neon-text text-5xl md:text-6xl mb-6">
+
+      <h1 class="premium-heading text-5xl md:text-6xl mb-6">
         Szczecin – Dąbie  
         <br /> Remonty • Elektryka • Smart Home • Monitoring
       </h1>
 
-      <p class="text-gray-300 text-lg md:text-xl mb-10">
+      <p class="strong-text text-lg md:text-xl mb-10">
         Działamy na Prawobrzeżu Szczecina:
         Dąbie, Zdroje, Podjuchy, Kijewo,
         Majowe, Bukowe.
@@ -30,10 +28,32 @@ import Layout from "../layouts/Layout.astro";
         montaż AGD oraz systemy inteligentnego domu.
       </p>
 
+      <!-- PRZYCISKI NAWIGACYJNE -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+
+        <a href="/uslugi"
+           class="px-8 py-4 glass neon-border font-semibold text-white rounded-full transition hover:scale-105">
+          Zobacz usługi
+        </a>
+
+        <a href="/kontakt"
+           class="px-8 py-4 glass neon-border font-semibold text-white rounded-full transition hover:scale-105">
+          Kontakt
+        </a>
+
+        <a href="/aplikacja-android"
+           class="px-8 py-4 glass neon-border font-semibold text-white rounded-full transition hover:scale-105">
+          Aplikacja Android
+        </a>
+
+      </div>
+
+      <!-- GŁÓWNY CTA -->
       <a href="tel:+48725144019"
-         class="px-8 py-4 bg-cyan-500 hover:bg-cyan-400 rounded-full font-semibold text-black transition glow">
+         class="px-8 py-4 bg-cyan-400 hover:bg-cyan-300 rounded-full font-bold text-black transition shadow-lg">
         Zadzwoń: 725 144 019
       </a>
+
     </div>
 
   </section>
@@ -43,48 +63,48 @@ import Layout from "../layouts/Layout.astro";
   <section class="section">
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
 
-      <!-- Bezpieczeństwo instalacji -->
-      <a href="/bezpieczenstwo-instalacji" class="glass p-8 text-center float block">
+      <a href="/bezpieczenstwo-instalacji" class="glass p-8 text-center block">
         <div class="text-4xl mb-4">⚡</div>
-        <h3 class="text-xl font-semibold mb-3">Bezpieczeństwo instalacji</h3>
-        <p class="text-gray-400">
+        <h3 class="strong-text-bold text-xl mb-3">
+          Bezpieczeństwo instalacji
+        </h3>
+        <p class="strong-text">
           Instalacje 230V i 400V (siła), podłączanie płyt,
           AGD, gniazdek, oświetlenia i Smart Home.
         </p>
       </a>
 
-      <!-- Kompleksowe remonty -->
-      <a href="/kompleksowe-remonty" class="glass p-8 text-center float block">
+      <a href="/kompleksowe-remonty" class="glass p-8 text-center block">
         <div class="text-4xl mb-4">🛠</div>
-        <h3 class="text-xl font-semibold mb-3">Kompleksowe remonty</h3>
-        <p class="text-gray-400">
+        <h3 class="strong-text-bold text-xl mb-3">
+          Kompleksowe remonty
+        </h3>
+        <p class="strong-text">
           Malowanie, tynkowanie, montaż drzwi,
           listew, mebli oraz lekkie prace hydrauliczne.
         </p>
       </a>
 
-      <!-- Nowoczesna automatyka -->
-      <a href="/nowoczesna-automatyka" class="glass p-8 text-center float block">
+      <a href="/nowoczesna-automatyka" class="glass p-8 text-center block">
         <div class="text-4xl mb-4">📡</div>
-        <h3 class="text-xl font-semibold mb-3">Nowoczesna automatyka</h3>
-        <p class="text-gray-400">
+        <h3 class="strong-text-bold text-xl mb-3">
+          Nowoczesna automatyka
+        </h3>
+        <p class="strong-text">
           Monitoring IP, wideodomofony,
           integracja systemów oraz Loxone Miniserver.
         </p>
       </a>
 
-      <!-- Tworzenie stron i aplikacji -->
-      <a href="https://legalofficeassistance.github.io/start-online/start-online.html"
-         target="_blank"
-         class="glass p-8 text-center float block">
-        <div class="text-4xl mb-4">💻</div>
-        <h3 class="text-xl font-semibold mb-3">
-          Tworzenie stron internetowych i aplikacji mobilnych (Android)
+      <a href="/aplikacja-android"
+         class="glass p-8 text-center block">
+        <div class="text-4xl mb-4">📱</div>
+        <h3 class="strong-text-bold text-xl mb-3">
+          Aplikacja Android
         </h3>
-        <p class="text-gray-400">
-          Nowoczesne strony www, aplikacje mobilne,
-          systemy online oraz rozwiązania dla firm.
-          Kliknij, aby zobaczyć szczegóły.
+        <p class="strong-text">
+          Dedykowana aplikacja do zarządzania
+          usługami i systemami inteligentnego domu.
         </p>
       </a>
 
@@ -93,46 +113,50 @@ import Layout from "../layouts/Layout.astro";
 
 
   <!-- SEKCJA KONTAKT -->
-  <section class="section text-center">
-    <h2 class="neon-text mb-6">Kontakt</h2>
+  <section class="section text-center glass p-8 max-w-4xl mx-auto mt-12">
 
-    <p class="text-gray-300 mb-3">
-      📞 Telefon: <a href="tel:+48725144019" class="text-cyan-400">725 144 019</a>
+    <h2 class="premium-heading text-3xl mb-6">
+      Kontakt
+    </h2>
+
+    <p class="strong-text mb-3">
+      📞 Telefon:
+      <a href="tel:+48725144019" class="font-bold underline underline-offset-4">
+        725 144 019
+      </a>
     </p>
 
-    <p class="text-gray-300 mb-3">
+    <p class="strong-text mb-3">
       💬 WhatsApp / Telegram: +36 70 265 5296
     </p>
 
-    <p class="text-gray-300">
+    <p class="strong-text">
       ✉ Email:
       <a href="mailto:buduje.remontuje.szczecin@gmail.com"
-         class="text-cyan-400">
+         class="font-bold underline underline-offset-4">
          buduje.remontuje.szczecin@gmail.com
       </a>
     </p>
+
   </section>
 
 
   <!-- PŁYWAJĄCE PRZYCISKI -->
 
-  <!-- TELEFON -->
   <a href="tel:+48725144019"
-     class="fixed bottom-6 right-6 bg-cyan-500 hover:bg-cyan-400 text-black w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg glow z-50">
+     class="fixed bottom-6 right-6 bg-cyan-400 hover:bg-cyan-300 text-black w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg z-50">
     📞
   </a>
 
-  <!-- WHATSAPP -->
   <a href="https://wa.me/36702655296"
      target="_blank"
      class="fixed bottom-24 right-6 bg-green-500 hover:bg-green-400 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg z-50">
     💬
   </a>
 
-  <!-- TELEGRAM -->
   <a href="https://t.me/+36702655296"
      target="_blank"
-     class="fixed bottom-42 right-6 bg-blue-500 hover:bg-blue-400 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg z-50">
+     class="fixed bottom-40 right-6 bg-blue-500 hover:bg-blue-400 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg z-50">
     ✈
   </a>
 

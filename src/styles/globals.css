@@ -2,27 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================
+   BACKGROUND
+========================= */
+
 body {
-  background: linear-gradient(135deg, #0f172a 0%, #111827 100%);
+  background: linear-gradient(135deg, #0b1220 0%, #0f172a 40%, #111827 100%);
   min-height: 100vh;
   overflow-x: hidden;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Glass effect */
+/* =========================
+   GLASS PREMIUM EFFECT
+========================= */
+
 .glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
-  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }
 
 .glass:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.45),
+    0 0 30px rgba(0, 255, 255, 0.18);
 }
 
-/* Neon accents */
+/* =========================
+   STRONG TEXT VISIBILITY
+========================= */
+
+.strong-text {
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0 0 14px rgba(255, 255, 255, 0.25);
+  line-height: 1.7;
+}
+
+.strong-text-bold {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.35);
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADINGS PREMIUM
+========================= */
+
+.premium-heading {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-shadow:
+    0 0 18px rgba(255, 255, 255, 0.25),
+    0 0 40px rgba(0, 255, 255, 0.15);
+}
+
+/* =========================
+   LIST IMPROVEMENT
+========================= */
+
+.glass ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.glass li {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+   NEON ACCENTS
+========================= */
+
 .neon-text {
   background: linear-gradient(90deg, #00f5ff, #00ffa3);
   -webkit-background-clip: text;
@@ -30,44 +94,15 @@ body {
 }
 
 .neon-border {
-  border: 1px solid rgba(0, 255, 255, 0.4);
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  border: 1px solid rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.35);
 }
 
-/* Floating animation */
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-6px); }
-  100% { transform: translateY(0px); }
-}
+/* =========================
+   PARAGRAPH DEFAULT BOOST
+========================= */
 
-.float {
-  animation: float 3s ease-in-out infinite;
-}
-
-/* Glow pulse */
-@keyframes glow {
-  0% { box-shadow: 0 0 5px #00f5ff; }
-  50% { box-shadow: 0 0 20px #00f5ff; }
-  100% { box-shadow: 0 0 5px #00f5ff; }
-}
-
-.glow {
-  animation: glow 2s infinite;
-}
-
-/* Section spacing */
-.section {
-  padding: 5rem 1.5rem;
-}
-
-/* Headings */
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
+p {
+  font-weight: 500;
+  color: #f8fafc;
 }

@@ -2,28 +2,66 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Kontakt | Złota Rączka Szczecin">
-    <h1>Kontakt</h1>
-    <p class="pt-4 max-w-2xl">
-        Najszybciej umówisz termin telefonicznie. Obsługuję Szczecin i okolice, ze szczególnym naciskiem na dzielnicę Dąbie.
+<Layout title="Kontakt | Remonty i Elektryka Szczecin-Dąbie">
+
+  <section class="glass p-8 max-w-4xl mx-auto mt-10">
+
+    <h1 class="premium-heading text-3xl md:text-4xl mb-8">
+      Kontakt
+    </h1>
+
+    <p class="strong-text text-lg mb-8">
+      Najszybciej umówisz termin telefonicznie.
+      Obsługujemy Szczecin-Dąbie, Zdroje, Podjuchy,
+      Kijewo, Majowe, Bukowe oraz całe Prawobrzeże.
     </p>
 
-    <div class="pt-8 space-y-4 text-lg">
-        <p>
-            <span class="font-semibold">Telefon:</span>
-            <a href="tel:+48725144019">+48 725 144 019</a>
+    <div class="space-y-6 text-lg">
+
+      <div class="glass p-6">
+        <p class="strong-text-bold">
+          📞 Telefon:
         </p>
-        <p>
-            <span class="font-semibold">E-mail:</span>
-            <a href="mailto:buduje.remontuje.szczecin@gmail.com">buduje.remontuje.szczecin@gmail.com</a>
+        <a href="tel:+48725144019"
+           class="text-cyan-300 text-xl font-semibold hover:text-white transition">
+          +48 725 144 019
+        </a>
+      </div>
+
+      <div class="glass p-6">
+        <p class="strong-text-bold">
+          ✉ E-mail:
         </p>
+        <a href="mailto:buduje.remontuje.szczecin@gmail.com"
+           class="text-cyan-300 text-lg font-semibold hover:text-white transition break-all">
+          buduje.remontuje.szczecin@gmail.com
+        </a>
+      </div>
+
     </div>
 
-    <section class="pt-10">
-        <h2>Informacje do wyceny</h2>
-        <p class="pt-4 max-w-3xl">
-            W wiadomości lub rozmowie podaj: rodzaj usługi, lokalizację, orientacyjny termin i zdjęcia miejsca prac.
-            Dzięki temu szybciej przygotuję wycenę oraz wolny termin.
-        </p>
+    <section class="mt-12 glass p-6">
+      <h2 class="strong-text-bold text-2xl mb-4">
+        Informacje potrzebne do wyceny
+      </h2>
+
+      <p class="strong-text text-lg">
+        W wiadomości lub rozmowie podaj:
+      </p>
+
+      <ul class="mt-4 space-y-2 text-lg">
+        <li>✔ Rodzaj usługi</li>
+        <li>✔ Lokalizację</li>
+        <li>✔ Orientacyjny termin</li>
+        <li>✔ Zdjęcia miejsca prac (jeśli to możliwe)</li>
+      </ul>
+
+      <p class="strong-text mt-6">
+        Dzięki temu szybciej przygotujemy wycenę
+        oraz zaproponujemy najbliższy dostępny termin.
+      </p>
     </section>
+
+  </section>
+
 </Layout>
