@@ -7,11 +7,20 @@ import Layout from "../layouts/Layout.astro";
   <!-- HERO VIDEO -->
   <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
 
-    <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
+    <!-- VIDEO BACKGROUND -->
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      class="absolute inset-0 w-full h-full object-cover"
+    >
       <source src="/video.mp4" type="video/mp4" />
     </video>
 
-    <div class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+    <!-- CIEMNA NAKŁADKA -->
+    <div class="absolute inset-0 bg-black/70"></div>
 
     <div class="relative z-10 max-w-4xl px-6">
 
@@ -28,7 +37,7 @@ import Layout from "../layouts/Layout.astro";
         montaż AGD oraz systemy inteligentnego domu.
       </p>
 
-      <!-- PRZYCISKI NAWIGACYJNE -->
+      <!-- PRZYCISKI -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
 
         <a href="/uslugi"
@@ -48,7 +57,7 @@ import Layout from "../layouts/Layout.astro";
 
       </div>
 
-      <!-- GŁÓWNY CTA -->
+      <!-- CTA -->
       <a href="tel:+48725144019"
          class="px-8 py-4 bg-cyan-400 hover:bg-cyan-300 rounded-full font-bold text-black transition shadow-lg">
         Zadzwoń: 725 144 019
@@ -108,7 +117,7 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </a>
 
-      <!-- NOWY KAFEL - STRONY I APLIKACJE -->
+      <!-- STRONY I APLIKACJE -->
       <a href="https://legalofficeassistance.github.io/start-online/start-online.html"
          target="_blank"
          rel="noopener noreferrer"
@@ -127,7 +136,7 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
 
-  <!-- SEKCJA KONTAKT -->
+  <!-- KONTAKT -->
   <section class="section text-center glass p-8 max-w-4xl mx-auto mt-12">
 
     <h2 class="premium-heading text-3xl mb-6">
